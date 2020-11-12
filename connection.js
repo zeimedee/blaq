@@ -1,9 +1,10 @@
 const mongoose = require('mongoose')
 const URI = 'mongodb://127.0.0.1:27017/obaa'
+const URL ='mongodb+srv://admin:mongoadmin12@cluster0.witgr.mongodb.net/blaq?retryWrites=true&w=majority'
 
 const connectDB = async () => 
 {
-    await mongoose.connect(URI,
+    await mongoose.connect(URL,
         {
             useNewUrlParser: true,
             useUnifiedTopology: true
